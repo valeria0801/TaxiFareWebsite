@@ -3,7 +3,7 @@ import datetime
 import requests
 
 '''
-# TaxiFareModel front
+# Taxi Fare Estimator
 '''
 
 #st.markdown('''
@@ -70,10 +70,10 @@ url_params = f"{url}?key={params['key']}&pickup_datetime={params['pickup_datetim
 
 prediction = requests.get(url_params).json()['prediction']
 
-if st.button('click me'):
+if st.button('predict 🚖💵'):
     st.write(prediction)
 else:
-    st.write('I was not clicked 😞')
+    st.write('')
 
 
 #st.write(prediction)
